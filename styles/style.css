@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -34,6 +34,10 @@
     color: rgb(114, 114, 114);
 }
 
+.text-primary {
+    color: rgb(255, 144, 14);
+}
+
 .bg-light {
     background-color: rgba(255, 144, 14, 0.1);
 }
@@ -47,19 +51,27 @@
     padding: 20px 25px;
 
 }
+
 .navbar,
 .banner {
     max-width: 1440px;
     margin: 0 auto;
 }
 
-main{
+main {
     max-width: 1440px;
     margin: 0 auto;
 }
-main>section{
+
+main>section {
     margin-top: 130px;
 }
+
+.section-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
 /*nav styles*/
 .navbar {
     justify-content: space-between;
@@ -110,37 +122,95 @@ main>section{
 }
 
 /*team features styles*/
-.teams{
+.teams {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
-.team-features{
-    display: flex;
+
+.team-features {
+
     align-items: center;
-    
+
 }
-.list-features{
+
+.list-features {
     max-width: 537px;
     margin-left: 73px;
 }
-.feature-descrip{
+
+.feature-descrip {
     font-size: 1rem;
     margin-bottom: 32px;
     margin-top: 24px;
 }
-.feature-title{
-    font-size: 2.8rem;
-    font-weight: 700;
-}
-#quick-list{
-    font-weight:500 ;
+
+#quick-list {
+    font-weight: 500;
 }
 
+/*some facts section styles*/
+.fact-descrip {
+    max-width: 542px;
+    margin-top: 24px;
+    margin-bottom: 100px;
+}
+
+.fact-card {
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 8px;
+    width: 240px;
+    height: 240px;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.facts-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.fact-number{
+    font-size: 2.8rem;
+    font-weight: 600;
+
+}
+.fact-name{
+    font-size: 1.25rem;
+    font-weight: 600px;
+}
+
+
+
 /*Responsive Media Query*/
-@media screen and (max-width:576px){
-    .navbar, .nav-links{
+/*small devices*/
+@media screen and (max-width:576px) {
+
+    .navbar,
+    .nav-links,
+    .team-features {
         flex-direction: column;
     }
-    
+
+    .teams {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .list-features {
+        margin: 20px auto;
+    }
+}
+
+/*medium devices*/
+@media screen and (min-width:576px) and (max-width:992px) {
+    .team-features {
+        flex-direction: column;
+    }
+
+    .list-features {
+        margin: 20px auto;
+    }
+
 }

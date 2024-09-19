@@ -194,8 +194,13 @@ main>section {
         flex-direction: column;
     }
 
-    .teams {
+    .teams, .facts-container {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .facts-container{
+        justify-items: center;
+        gap:20px;
     }
 
     .list-features {

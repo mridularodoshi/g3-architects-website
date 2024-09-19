@@ -149,6 +149,50 @@ main>section {
     font-weight: 500;
 }
 
+/*features section styles*/
+.features-love {
+    gap: 146px;
+}
+
+.feature-card {
+    max-width: 586px;
+    border-radius: 8px;
+
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    margin-bottom: 20px;
+
+}
+
+#feature-section-title {
+    border-left: 5px solid rgb(255, 144, 14);
+    padding-left: 20px;
+
+}
+
+.feature-card>.feature-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#experience-badge {
+    width: 342px;
+    height: 200px;
+    padding: 45px 42px;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+#btn-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+#btn-exp{
+    font-size: 1.6rem;
+    font-weight: 500;
+
+}
 /*some facts section styles*/
 .fact-descrip {
     max-width: 542px;
@@ -172,27 +216,32 @@ main>section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
-.fact-number{
+
+.fact-number {
     font-size: 2.8rem;
     font-weight: 600;
 
 }
-.fact-name{
+
+.fact-name {
     font-size: 1.25rem;
     font-weight: 600px;
 }
+
 /*sponsor section styles*/
-.sponsor-info{
+.sponsor-info {
     max-width: 542px;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 50px;
 }
-.sponsor-container{
+
+.sponsor-container {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
 }
-.sponsor-container>img{
+
+.sponsor-container>img {
     filter: grayscale(100%);
 }
 
@@ -206,17 +255,20 @@ main>section {
         flex-direction: column;
     }
 
-    .teams, .facts-container, .sponsor-container {
+    .teams,
+    .facts-container,
+    .sponsor-container {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .facts-container{
+    .facts-container {
         justify-items: center;
-        gap:20px;
+        gap: 20px;
     }
-    .sponsor-container{
+
+    .sponsor-container {
         justify-items: center;
-        gap:50px;
+        gap: 50px;
     }
 
     .list-features {
@@ -233,10 +285,12 @@ main>section {
     .list-features {
         margin: 20px auto;
     }
-    .facts-container, .sponsor-container {
+
+    .facts-container,
+    .sponsor-container {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
-        gap:50px;
+        gap: 50px;
 
     }
 

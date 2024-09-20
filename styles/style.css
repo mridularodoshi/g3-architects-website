@@ -184,15 +184,23 @@ main>section {
     margin-left: -100px;
     margin-top: -100px;
 }
-#btn-year{
+
+#btn-year {
     font-size: 4rem;
     font-weight: 700;
 }
-#btn-exp{
+
+#btn-exp {
     font-size: 1.6rem;
     font-weight: 500;
 
 }
+
+.featured-architect>img {
+    width: 100%;
+
+}
+
 /*some facts section styles*/
 .fact-descrip {
     max-width: 542px;
@@ -251,7 +259,8 @@ main>section {
 
     .navbar,
     .nav-links,
-    .team-features {
+    .team-features,
+    .features-love {
         flex-direction: column;
     }
 
@@ -273,6 +282,11 @@ main>section {
 
     .list-features {
         margin: 20px auto;
+    }
+
+    #experience-badge{
+        margin: 50px 50px;
+
     }
 }
 
